@@ -1,0 +1,7 @@
+<div ng-repeat="history in postHistory">
+
+<h4 style="font-style: italic;"> {{history.date | date:'fullDate'}} </h4>
+
+<div ta-bind="text" ng-model="history.title">
+</div>
+<hr>

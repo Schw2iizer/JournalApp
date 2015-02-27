@@ -2,9 +2,9 @@
 	outline: 1px solid red;
 }*/
 
-/*html, body {
+body {
 	background: url("/images/crossword.png") repeat;
-}*/
+}
 
 /*body {
   background: url("/images/frozen.jpg") no-repeat center center fixed;
@@ -16,12 +16,20 @@
   float: left;
 }*/
 
+/*.historyPhoto {
+  background: url("/images/frozen.png") repeat;
+}*/
+
 .journalHeading {
 	text-align: center;
-	font: "Trade Winds", cursive;
+	font-family: "Trade Winds", cursive;
 	border-bottom: solid;
 }
 
+.menu {
+  margin-right: 10px;
+  margin-top: 10px;
+}
 
 .postButton {
 	margin-left: 5px;

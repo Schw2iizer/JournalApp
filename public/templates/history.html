@@ -1,7 +1,11 @@
-<div ng-repeat="history in postHistory">
+<div>
+<!-- <div class="column"> -->
+	<div style="border: solid 1px; border-radius: 25px" ng-repeat="history in postHistory">
 
-<h4 style="font-style: italic;"> {{history.date | date:'fullDate'}} </h4>
+	<h4 style="font-family: 'Permanent Marker', cursive; color: rgb(35, 101, 155);"> {{history.date | date:'fullDate'}} 
+	</h4>
 
-<div ta-bind="text" ng-model="history.title">
+	<div ta-bind="text" ng-model="history.title">
+	</div>
 </div>
-<hr>
+

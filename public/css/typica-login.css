@@ -9,7 +9,7 @@ html {
 
 /* line 13, ../sass/typica-login.scss */
 body {
-  background: url(../bg1.png) no-repeat center center fixed;
+  /*background: url(/images/bg1.png) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,7 +18,7 @@ body {
 @media (min-width: 979px) {
   /* line 13, ../sass/typica-login.scss */
   body {
-    padding-top: 80px;
+  /*  padding-top: 80px;*/
   }
 }
 

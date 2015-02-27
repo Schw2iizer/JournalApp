@@ -46,7 +46,6 @@ app.service("journalService", function($http, $q, $location, $sce){
 			$location.path("/journal/history");
 			deferred.resolve(response)
 		})
-		// moment().format('MMMM Do YYYY, h:mm:ss a');
 		return deferred.promise;
 	}
 

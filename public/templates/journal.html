@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/#/profile"> Profile </a>
-      <a class="navbar-brand" ng-click="retrievePosts()" href="/#/journal/history"> History </a>
+      <!-- <a class="navbar-brand" ng-click="retrievePosts()" href="/#/journal/history"> History </a> -->
     </div>
 
     <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,32 +45,37 @@
       </ul> -->
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+         <!--  <input type="text" class="form-control" placeholder="Search"> -->
         </div>
-        <button type="submit" ng-click="retrievePosts()" class="btn btn-primary btn-sm"> Submit </button>
+        <!-- <button type="submit" ng-click="retrievePosts()" class="btn btn-primary btn-sm"> Submit </button> -->
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li> <button class="logoutButton" ng-click="loggingOut()"> Logout </button> </li>
+        <li class="menu"> 
+          <button class="btn btn-primary btn-sm" type="submit" ng-click="retrievePosts()"> History </button>  
+          <button class="btn btn-primary btn-sm" ng-click="loggingOut()"> Logout </button>    
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class=journalHeading> 
-	<h1> Heading </h1> 
+	<h1> Text Editor  </h1> 
 </div>
 
 <div>
 	<div class="journalButtons"> </div>
 		<!-- <button class="postButton" ng-click=""> New Post </button> -->
-		<button class="btn btn-primary btn-xs" ng-click="createThatPost()"> Save </button>
+		<!-- <button class="btn btn-primary btn-xs" ng-click="createThatPost()"> Save </button> -->
 
 	</div>
 
 <!-- textAngular Editor -->
-<div class="textEditor">
+<div style="border: 1px solid" class="textEditor">
 	<div text-angular ng-model="journalPost" name="demo-editor" ta-text-editor-class="border-around" ta-html-editor-class="border-around"> <div ta-bind ng-model="htmlcontent"></div> </div>
 </div>
+
+<button style="float: right; margin-right: 10px; margin-top: 5px" class="btn btn-primary btn-sm" ng-click="createThatPost()"> Save </button>
 
 <div id="calendar"></div>
 

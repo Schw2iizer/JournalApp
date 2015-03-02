@@ -48,18 +48,18 @@ body {
 /* $NAVIGATION */
 /* ########### */
 /* line 43, ../sass/typica-login.scss */
-.navbar .brand {
+/*.navbar .brand {
   margin-top: 20px;
   padding-bottom: 8px;
   max-height: 40px;
   width: auto;
-}
+}*/
 /* line 49, ../sass/typica-login.scss */
-.navbar .navbar-inner {
+/*.navbar .navbar-inner {
   height: 80px;
   background: white;
   filter: none;
-}
+}*/
 /* line 54, ../sass/typica-login.scss */
 .navbar .nav {
   margin-top: 20px;
@@ -106,7 +106,7 @@ body {
   margin-left: -235px;
   padding: 25px;
   width: 420px;
-  height: 320px;
+  height: 250px;
   background: white;
   text-align: center;
 }

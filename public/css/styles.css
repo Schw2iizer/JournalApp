@@ -20,6 +20,15 @@ body {
   background: url("/images/frozen.png") repeat;
 }*/
 
+.journalBar {
+  float: left;
+/*  height: 25px;*/
+}
+
+.registerPage{
+  float: left;
+}
+
 .journalHeading {
 	text-align: center;
 	font-family: "Trade Winds", cursive;

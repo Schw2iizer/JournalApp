@@ -24,6 +24,10 @@ app.config(function($routeProvider){
 			// 	}
 			// }
 		})
+		.when("/register", {
+			templateUrl: "templates/register.html",
+			controller: "registerController"
+		})
 		.when("/journal/history", {
 			templateUrl: "templates/history.html",
 			controller: "historyController"

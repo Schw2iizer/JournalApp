@@ -92,6 +92,6 @@ app.post("/api/register", function(req, res){
   })
 })
 
+app.listen(process.env.EXPRESS_PORT || 8080)
 
-
-app.listen(port);
+// app.listen(port);

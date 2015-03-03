@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser")
 var LocalStrategy = require("passport-local").Strategy;
-var port = (8080);
+var port = process.env.EXPRESS_PORT || 8080;
 var session = require("express-session");
 var passport = require("passport");
 var FacebookStrategy = require("passport-facebook").Strategy;
@@ -11,6 +11,7 @@ var User = require("./api/models/userModel");
 var postController = require("./api/controllers/postController");
 var userController = require("./api/controllers/userController");
 var connect = require("connect");
+
 
 mongoose.connect("mongodb://localhost/user");
 
@@ -92,6 +93,6 @@ app.post("/api/register", function(req, res){
   })
 })
 
-app.listen(process.env.EXPRESS_PORT || 8080)
+app.listen(port)
 
 // app.listen(port);

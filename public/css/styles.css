@@ -166,3 +166,14 @@ body {
 	outline: 0;
 }
 
+.googleMap {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.angular-google-map-container {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}

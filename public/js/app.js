@@ -1,4 +1,4 @@
-var app = angular.module("Journal", ["ngRoute", "textAngular"]);
+var app = angular.module("Journal", ["ngRoute", "textAngular", "uiGmapgoogle-maps"]);
 
 app.config(function($routeProvider){
 	$routeProvider

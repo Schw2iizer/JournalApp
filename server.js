@@ -64,7 +64,7 @@ var isAuthed = function(req, res, next){
 //             }
 // })
 
-app.get('/api/logout', function(req, res){
+app.get("/api/logout", function(req, res){
   req.logout();
   res.redirect('/');
 });

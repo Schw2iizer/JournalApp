@@ -1,4 +1,4 @@
-var app = angular.module("Journal", ["ngRoute", "textAngular", "uiGmapgoogle-maps"]);
+var app = angular.module("Journal", ["ngRoute", "textAngular", "uiGmapgoogle-maps", "LocalStorageModule"]);
 
 app.config(function($routeProvider){
 	$routeProvider
@@ -33,6 +33,13 @@ app.config(function($routeProvider){
 			controller: "historyController"
 		})
 		.otherwise('/');
+
+app.config(function(localStorageServiceProvider) {
+  localStorageServiceProvider
+    .setPrefix("Journal")
+    .setStorageType("sessionStorage")
+    .setNotify(true, true)
+});
 
 
 

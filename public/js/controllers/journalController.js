@@ -32,11 +32,11 @@ app.controller("journalController", function($scope, journalService){
             zoom: 4
         };
         // map options
-        $scope.options = {
-            scrollwheel: true,
+        options = {
+            scrollwheel: false,
             panControl: true,
             rotateControl: true,
-            scaleControl: true,
+            scaleControl: false,
             streetViewControl: true,
             zoomControl: true,
             zoomControlOptions: {
@@ -48,8 +48,8 @@ app.controller("journalController", function($scope, journalService){
         $scope.marker = {
             id: 0,
             coords: {
-                latitude:  7.0933,
-                longitude: 79.9989
+                latitude:  38.68551,
+                longitude: -96.50391
             },
             options: {
                 draggable: false,

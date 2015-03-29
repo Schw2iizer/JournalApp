@@ -1,7 +1,7 @@
 var app = angular.module("Journal");
 
 
-app.controller("journalController", function($scope, journalService){
+app.controller("journalController", function($scope, journalService, uiGmapGoogleMapApi){
 	
 	$scope.createThatPost = function(){
 		journalService.createPost($scope.journalPost);
@@ -32,11 +32,9 @@ app.controller("journalController", function($scope, journalService){
             zoom: 4
         };
         // map options
-        options = {
+        $scope.options = {
             scrollwheel: false,
-            panControl: true,
-            rotateControl: true,
-            scaleControl: false,
+            panControl: false,
             streetViewControl: true,
             zoomControl: true,
             zoomControlOptions: {
@@ -56,5 +54,9 @@ app.controller("journalController", function($scope, journalService){
                 animation: 1 // 1: BOUNCE, 2: DROP
             }
         };
+
+        uiGmapGoogleMapApi.then(function(maps) {
+
+    });
 
 })

@@ -1,8 +1,37 @@
-
-
+<div class="col-md-12">
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li data-toggle="collapse" data-target="#filterOptions"><a href="">Filter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+        <div>
+            <div id="filterPadding" class="container">
+                <div class="col-md-12">
+                    <div class="form">
+                        <div id="filterOptions" class="collapse out">
+                            <div class="col-xs-2">Search by Date: <input type="text" ng-model="search.$">
+                            	<div ng-repeat="history in postHistory">
+    								<div>{{search.history}}</div>
+    							</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+         
 <div>
 <!-- <div class="column"> -->
-	<div style="border: solid 1px; border-radius: 25px" ng-repeat="history in postHistory">
+	<div style="border: solid 1px blue; border-radius: 20px" ng-repeat="history in postHistory">
 
 	<h4 style="font-family: 'Permanent Marker', cursive; color: rgb(35, 101, 155);"> {{history.date | date:'fullDate'}} 
 	</h4>

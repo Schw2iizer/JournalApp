@@ -5,6 +5,12 @@ app.controller("journalController", function($scope, journalService, uiGmapGoogl
 	
 	$scope.createThatPost = function(){
 		journalService.createPost($scope.journalPost);
+        swal({   
+            title: "Successfully saved!",   
+            text: "I will self-destruct in 2 seconds.",   
+            timer: 2000,   
+            showConfirmButton: false 
+        });
 		$scope.journalPost = "";
 
 	}

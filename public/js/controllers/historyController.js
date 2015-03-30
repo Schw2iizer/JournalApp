@@ -1,6 +1,11 @@
 var app = angular.module("Journal");
 
-app.controller("historyController", function($scope, journalService){
+app.controller("historyController", function($scope, journalService, $filter){
 	$scope.postHistory = journalService.fetchPosts();
-	$scope.history = "hello world";
+	$scope.history = [{
+		// "date": "date",
+		"title": "title"
+	}];
+
+	// $scope.date = $filter('date')(new Date(), 'fullDate');
 })

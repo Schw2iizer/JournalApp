@@ -16,10 +16,8 @@
                 <div class="col-md-12">
                     <div class="form">
                         <div id="filterOptions" class="collapse out">
-                            <div class="col-xs-2">Search by Date: <input type="text" ng-model="search.$">
-                            	<div ng-repeat="history in postHistory">
-    								<div>{{search.history}}</div>
-    							</div>
+                            <div class="col-xs-2">Search by Date: <input type="text" ng-model="search.date" ng-trim="fullDate">
+<!--                             <p> {{search.date | date:'fullDate'}}</p> -->
                             </div>
                         </div>
                     </div>
@@ -31,9 +29,9 @@
          
 <div>
 <!-- <div class="column"> -->
-	<div style="border: solid 1px blue; border-radius: 20px" ng-repeat="history in postHistory">
+	<div style="border: solid 1px blue; border-radius: 20px" ng-repeat="history in postHistory | filter:search">
 
-	<h4 style="font-family: 'Permanent Marker', cursive; color: rgb(35, 101, 155);"> {{history.date | date:'fullDate'}} 
+	<h4 class="journalDate"> {{history.date | date:'fullDate'}} 
 	</h4>
 
 	<div ta-bind="text" ng-model="history.title">

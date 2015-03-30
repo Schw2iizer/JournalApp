@@ -2,6 +2,16 @@
 	outline: 1px solid red;
 }*/
 
+.horizontalRule {
+  border: 0;
+  height: 0; /* Firefox */
+  box-shadow: 0 0 10px 1px black;
+}
+
+.horizontalRule:after {
+  content: "\00a0";  /* Prevent margin collapse */
+}
+
 body {
 	background: url("/images/crossword.png") repeat;
 }

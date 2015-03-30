@@ -29,12 +29,10 @@
          
 <div>
 <!-- <div class="column"> -->
-	<div style="border: solid 1px blue; border-radius: 20px" ng-repeat="history in postHistory | filter:search">
-
-	<h4 class="journalDate"> {{history.date | date:'fullDate'}} 
-	</h4>
-
-	<div ta-bind="text" ng-model="history.title">
+	<div ng-repeat="history in postHistory | filter:search">
+			<hr class="horizontalRule">
+		<h4 class="journalDate"> {{history.date | date:'fullDate'}} </h4>
+		<div ta-bind="text" ng-model="history.title">
 	</div>
 </div>
 

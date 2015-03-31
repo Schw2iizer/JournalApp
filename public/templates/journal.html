@@ -1,17 +1,3 @@
-<script> $(document).ready(function() {
-
-    // page is now ready, initialize the calendar...
-
-    $('#calendar').fullCalendar({
-    	header: {
-    		left:   'title',
-    		center: 'today, prev, next',
-    		right:  'prevYear, nextYear'
-		}
-    })
-
-});
-</script>
 
 <div class="journalBar"
 <nav class="navbar navbar-default">
@@ -42,11 +28,10 @@
       </ul>
     </div>
   </div>
-<!-- </nav> -->
 </div>
-
+              <!-- end of </nav> -->
 <div class=journalHeading> 
-	<h1 style="color: #4F759B"><i> A place to store your thoughts... </i></h1> 
+	<h1 class="engraved" style="color: #4F759B"><i> A place to store your thoughts... </i></h1> 
 </div>
 
 <div>
@@ -65,7 +50,7 @@
 
 <div id="calendar"></div>
 
-<h1 style="text-align: center"> Drop a marker where you've visited .. <i class="fa fa-exclamation-triangle"></i> still under construction <i class="fa fa-exclamation-triangle"></i> </h1>
+<h1 class="engraved" style="text-align: center"> Drop a marker where you've visited .. <i class="fa fa-exclamation-triangle"></i> still under construction <i class="fa fa-exclamation-triangle"></i> </h1>
 <input class="location" placeholder="Location"></input> <button type="button" class="btn btn-primary btn-xs">Submit</button>
 <div class="col-md-9 googleMap"> 
   <ui-gmap-google-map

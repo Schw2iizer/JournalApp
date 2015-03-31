@@ -30,7 +30,8 @@ app.service("authService", function($http, $q, $location){
 			$location.path("/journal").replace();
 			deferred.resolve(response);
 		}, function(err){
-			console.log(err);
+			sweetAlert("Oops...", "Something went wrong!", "error");
+			// console.log(err);
 		})
 	return deferred.promise;
 	}

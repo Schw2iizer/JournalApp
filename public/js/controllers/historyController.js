@@ -7,5 +7,4 @@ app.controller("historyController", function($scope, journalService, $filter){
 		"title": "title"
 	}];
 
-	// $scope.date = $filter('date')(new Date(), 'fullDate');
 })

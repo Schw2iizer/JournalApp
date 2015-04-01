@@ -17,10 +17,4 @@ app.controller("authController", function($scope, authService){
 		authService.login($scope.email, $scope.password);
 	}
 
-	// $scope.data.onFolderNumberKeyPress = function(event)
-	// {
- //    	if (event.charCode == 13) //if enter then hit the search button
- //        $scope.data.search();
-	// }
-
 })

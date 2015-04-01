@@ -56,14 +56,6 @@ var isAuthed = function(req, res, next){
   return next();
 };
 
-// app.post("/api/mashape", function(req, res){
-//             url: "https://instatunes.p.mashape.com/search"",
-//             headers: {
-//                 "X-Mashape-Key": "FvX1wjW9COmshVyvGUMeQQAzBxklp15BGPrjsnBnoMIP8x4kTs",
-//                 "Accept": "application/json"
-//             }
-// })
-
 app.get("/api/logout", function(req, res){
   req.logout();
   res.redirect('/');

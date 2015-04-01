@@ -16,17 +16,6 @@ body {
 	background: url("/images/crossword.png") repeat;
 }
 
-
-
-/*.logo {
-  display: inline-block;
-  float: left;
-}*/
-
-/*.historyPhoto {
-  background: url("/images/frozen.png") repeat;
-}*/
-
 a:hover {
   color: #bada55;
 }
@@ -79,13 +68,6 @@ a:hover {
   background-image: linear-gradient(to bottom, #0ee652, #5b5bd9);
   text-decoration: none;
 }
-
-/*.ckeditor {
-	margin-left: 10px;
-	height: 200px;
-	width: 400px;
-	font-size: 20px;
-}*/
 
 .ta-editor {
   min-height: 300px;
@@ -205,9 +187,5 @@ a:hover {
 .engraved {
   color: #2b4949;
   text-shadow: -0px 0px hsla(0,0%,100%,0.03333), 0px -0px hsla(0,0%,0%,0.2), -0.5px 0.5px hsla(0,0%,100%,0.03333), 0.5px -0.5px hsla(0,0%,0%,0.2), -1px 1px hsla(0,0%,100%,0.03333), 1px -1px hsla(0,0%,0%,0.2), -1.5px 1.5px hsla(0,0%,100%,0.03333), 1.5px -1.5px hsla(0,0%,0%,0.2), -2px 2px hsla(0,0%,100%,0.03333), 2px -2px hsla(0,0%,0%,0.2), 0px 0px 40px hsla(0,0%,100%,0.1);
-
-/*  color: indigo;
-  text-shadow: 0px 0px 0px #FFD, -0px 0px 0px #FFD, -0px -0px 0px #FFD, 0px -0px 0px #FFD, 0px 1px 0px #FFD, -0px 1px 0px #FFD, -0px -1px 0px #FFD, 0px -1px 0px #FFD, 0px 2px 0px #FFD, -0px 2px 0px #FFD, -0px -2px 0px #FFD, 0px -2px 0px #FFD, 1px 0px 0px #FFD, -1px 0px 0px #FFD, -1px -0px 0px #FFD, 1px -0px 0px #FFD, 1px 1px 0px #FFD, -1px 1px 0px #FFD, -1px -1px 0px #FFD, 1px -1px 0px #FFD, 1px 2px 0px #FFD, -1px 2px 0px #FFD, -1px -2px 0px #FFD, 1px -2px 0px #FFD, 2px 0px 0px #FFD, -2px 0px 0px #FFD, -2px -0px 0px #FFD, 2px -0px 0px #FFD, 2px 1px 0px #FFD, -2px 1px 0px #FFD, -2px -1px 0px #FFD, 2px -1px 0px #FFD, 2px 2px 0px #FFD, -2px 2px 0px #FFD, -2px -2px 0px #FFD, 2px -2px 0px #FFD, 0px 0px 0px hsla(0,0%,0%,0), -4px 2px 2px black;*/
-
 
 }
